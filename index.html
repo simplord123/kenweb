@@ -17,8 +17,8 @@
             font-family: Poppins;
         }
         body{
-            background-color: #333;
             color: whitesmoke;
+            background-image: linear-gradient(to right top, black 20%, rgb(27, 27, 27), rgb(36, 36, 36), rgb(61, 61, 61), rgb(85, 85, 85),rgb(151, 129, 129),rgb(85, 85, 85),rgb(61, 61, 61),rgb(36, 36, 36), rgb(27, 27, 27), black);
         }
         h1,h2,h3{
             color: white;
@@ -96,16 +96,11 @@
         label:hover{
             color: skyblue;
         }
-        @media{
-
-        }
     </style>
 </head>
 <body>
 <header>
     <h1>Hello Cavite! My Goals for the Month!</h1>
-
-    <hr>
 
     <nav aria-label="primary-navigation">
         <ul>
@@ -125,6 +120,7 @@
     <hr>
     <main>
 <img src="img/solo1.jpg" alt="Graduaiton Photo Toga" title="Graduaiton Photo Toga" width="400" height="530">
+    </main>
     <h2 class="center">I am Kenneth Andrew S. Avecilla, and This is My First Basic HTML Website.</h2>
     <p class="center">
         You better get ready for a big surprise <br>
@@ -162,6 +158,7 @@
     </p>
     <hr>
     <article id="schedule">
+        <section>
     <h3>My Daily Schedule</h3>
     <p>Let me tell you how:</p>
         <ol>
@@ -254,9 +251,11 @@
         </tr>
     </tfoot>
 </table>
+</section>
     </article>
     <hr>
     <article id="vacation">
+        <section>
     <h2 class="center">I am Also Planning a Vacation</h2>
     <p class="center">I have been working hard and really need a getaway.</p>
     <p class="center">I live in <abbr title="General Trias"><a href="https://en.wikipedia.org/wiki/Cavite" class="c">Cavite</a></abbr> so I want to visit a beach</p>
@@ -284,11 +283,12 @@
         <dt>The Sahara Desert</dt>
         <dd>I hear this is very <strong><a href="https://pepperhead.com/top-10-worlds-hottest-peppers/" class="d">Hot</a></strong>!</dd>
     </dl>
+</section>
     </article>
-
     <hr>
     <article id="contact">
-        <h2>Contat Me</h2>
+        <section>
+        <h3>Contat Me</h3>
         <p>I'd really like to hear from you!</p>
 
         <form action="https://httpbin.org/get">
@@ -384,8 +384,8 @@
     <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
     <button type="reset">Reset</button>
         </form>
+    </section>
     </article>
-</main>
     <hr>
     <footer>
 <a href="https://www.youtube.com/channel/UCfWcjunVpg11Lj045SycJXQ/featured" class="e">Kenneth Andrew Strange Avecilla</a><br>
