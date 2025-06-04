@@ -13,15 +13,15 @@
         html{
             font-size: 15px;
         }
-        *{
-            font-family: Poppins;
-        }
         body{
-            color: whitesmoke;
+            color: white;
             background-image: linear-gradient(to right top, black 20%, rgb(27, 27, 27), rgb(36, 36, 36), rgb(61, 61, 61), rgb(85, 85, 85),rgb(151, 129, 129),rgb(85, 85, 85),rgb(61, 61, 61),rgb(36, 36, 36), rgb(27, 27, 27), black);
+            text-shadow: 0px 3px 3px black;
+            font-family: Poppins;
         }
         h1,h2,h3{
             color: white;
+            text-shadow: 0px 5px 5px black;
         }
         abbr:hover{
             color: skyblue;
@@ -30,11 +30,12 @@
             text-decoration: none;
         }
         a{
-            color: skyblue;
+            color: rgb(0, 183, 255);
             text-decoration: none;
+            text-shadow: 0px 2px 2px black;
         }
         .a{
-            color: rgb(255, 102, 0);
+            color: gold;
             text-decoration: none;
         }
         a:hover, a:active{
@@ -61,7 +62,7 @@
             margin: 0 auto;
             max-width: 100%;
             border-radius: 2%;
-            border: gold 2px ridge;
+            border: gold 1px solid;
             
         }
         .left{
@@ -70,20 +71,21 @@
             margin-right: auto;
         }
         table, tr, th, td, caption{
-            border: 1px solid #eee;
+            border: 1px solid skyblue;
             font-family: 'Courier New', Courier, monospace;
             border-collapse: collapse;
             padding: 1rem;
             margin: 0 auto;
             max-width: 100%;
+            color: gold;
         }
         button{
-            border: 1px solid goldenrod;
+            border: 1px solid gold;
             background-color: black;
-            color: gold;
-            border-radius: 2%;  
-            margin-left: 1%;
-            width: 80px;
+            color: white;
+            border-radius: 10%;  
+            margin-right: 0.5%;
+            width: 71px;
             height: 30px;
             text-align: center;
             
@@ -100,7 +102,10 @@
 </head>
 <body>
 <header>
+
     <h1>Hello Cavite! My Goals for the Month!</h1>
+
+</header>
 
     <nav aria-label="primary-navigation">
         <ul>
@@ -115,11 +120,10 @@
             </li>
         </ul>
     </nav>
-</header>
 
     <hr>
     <main>
-<img src="img/solo1.jpg" alt="Graduaiton Photo Toga" title="Graduaiton Photo Toga" width="400" height="530">
+<img src="img/solo1.jpg" alt="Graduation Photo Toga" title="Graduation Photo Toga" width="400" height="530">
     </main>
     <h2 class="center">I am Kenneth Andrew S. Avecilla, and This is My First Basic HTML Website.</h2>
     <p class="center">
@@ -158,7 +162,6 @@
     </p>
     <hr>
     <article id="schedule">
-        <section>
     <h3>My Daily Schedule</h3>
     <p>Let me tell you how:</p>
         <ol>
@@ -167,7 +170,7 @@
         <li>I have a lovely <abbr title="AVECILLA"><a href="https://www.facebook.com/KennAndrewAvecilla">Family</a></abbr>.</li>
         </ol>
 
-<img src="img/family.jpg" alt="Avecilla family" title="Avecilla Family" width="1500">
+        <img src="img/family.jpg" alt="Avecilla family" title="Avecilla Family" width="1500">
 <figure>
     <figcaption>This is my family - Avecilla</figcaption>
 </figure>
@@ -251,15 +254,13 @@
         </tr>
     </tfoot>
 </table>
-</section>
     </article>
     <hr>
     <article id="vacation">
-        <section>
     <h2 class="center">I am Also Planning a Vacation</h2>
     <p class="center">I have been working hard and really need a getaway.</p>
     <p class="center">I live in <abbr title="General Trias"><a href="https://en.wikipedia.org/wiki/Cavite" class="c">Cavite</a></abbr> so I want to visit a beach</p>
-<img src="img/motor.jpg" alt="Sniper" title="Di ka pogi pag wala ka nito" width="600">
+    <img src="img/motor.jpg" alt="Sniper" title="Di ka pogi pag wala ka nito" width="600">
     <h3>Place I'm Planning to Visit</h3>
     <ul>
     <li>
@@ -283,28 +284,26 @@
         <dt>The Sahara Desert</dt>
         <dd>I hear this is very <strong><a href="https://pepperhead.com/top-10-worlds-hottest-peppers/" class="d">Hot</a></strong>!</dd>
     </dl>
-</section>
     </article>
     <hr>
     <article id="contact">
-        <section>
-        <h3>Contat Me</h3>
+        <h2>Contact Me</h2>
         <p>I'd really like to hear from you!</p>
 
         <form action="https://httpbin.org/get">
             <fieldset>
                 <legend>Personal Information</legend>
             <p><label for="firstName">First Name:</label>
-            <input type="text" name="firstName" id="firstName" placeholder="First name" autocomplete="on" required autofocus></p>
+            <input type="text" name="firstName" id="firstName" placeholder="First name" autocomplete="on" required></p>
             <p><label for="lastName">Last Name:</label>
             <input type="text" name="lastName" id="lastName" placeholder="Last name" autocomplete="on" required></p>
             <p><label for="password">Password:</label>
             <input type="text" name="password" id="password" placeholder="********" autocomplete="on" required></p>
             <p><label for="phone">Phone no:</label>
             <input type="tel" name="phone" id="phone" placeholder="09**-***-****" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" required></p>
-<!--             <p><label for="year">Favorite Year:</label>
+            <p><label for="year">Favorite Year:</label>
             <input type="number" name="year" id="year" min="1950" max="2025" step="1" value="1990"></p>
-            <p><label for="coffee">Your Favorite Coffee:</label>
+<!--             <p><label for="coffee">Your Favorite Coffee:</label>
             <select name="coffee" id="coffee" multiple size="5">
             <optgroup label="Coffees">
                 <option value="black coffee">Black Coffee</option>
@@ -323,7 +322,8 @@
             <label for="coffee">Favorite Coffee:</label>
             <input type="text" name="coffee" id="coffee" list="coffee-list">
             <datalist id="coffee-list">
-                <option value="coffee">
+                <option value="black coffee">
+                <option value="3 in 1">
                 <option value="latte">
                 <option value="espresso">
                 <option value="americano">
@@ -378,14 +378,13 @@
         <label for="message">Your Message:</label>
         <br>
         <textarea name="message" id="message" cols="30" rows="3" placeholder="Start typing message here..."></textarea>
-    </fieldset>
     <br>
     <button type="submit">Submit</button>
     <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
     <button type="reset">Reset</button>
-        </form>
-    </section>
-    </article>
+</fieldset>
+</form>
+</article>
     <hr>
     <footer>
 <a href="https://www.youtube.com/channel/UCfWcjunVpg11Lj045SycJXQ/featured" class="e">Kenneth Andrew Strange Avecilla</a><br>
