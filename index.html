@@ -19,9 +19,27 @@
             text-shadow: 0px 3px 3px black;
             font-family: Poppins;
         }
-        h1,h2,h3{
+        h1{
+            width: 90%;
+            background-image: linear-gradient(to top right, black 5%, #333, gray);
+            box-shadow: 5px 10px 10px gray;
+            color: whitesmoke;
+            text-shadow: 5px 5px 5px black;
+            padding: 1rem;
+            margin: auto;
+
+            
+        }
+        h2,h3{
             color: white;
             text-shadow: 0px 5px 5px black;
+            background-image: linear-gradient(to top right, black 5%, gray);
+            box-shadow: 5px 10px 10px gray;
+            color: whitesmoke;
+            text-shadow: 5px 5px 5px black;
+            padding: 1rem;
+            margin: 1rem;
+
         }
         abbr:hover{
             color: skyblue;
@@ -70,14 +88,15 @@
             margin-left: 0%;
             margin-right: auto;
         }
-        table, tr, th, td, caption{
-            border: 1px solid skyblue;
+        table, tr, th, td, caption {
+            border: 1px solid whitesmoke;
             font-family: 'Courier New', Courier, monospace;
             border-collapse: collapse;
             padding: 1rem;
             margin: 0 auto;
             max-width: 100%;
             color: gold;
+            background-color: rgba(128, 128, 128, 0.199);
         }
         button{
             border: 1px solid gold;
@@ -97,6 +116,9 @@
         }
         label:hover{
             color: skyblue;
+        }
+        .color {
+            background-color: rgba(255, 255, 255, 0.301);
         }
     </style>
 </head>
@@ -201,7 +223,7 @@
     And controlling the game with my heavy duty joystick <br>
 </p>
 <table>
-    <caption>My Daily Grind</caption>
+    <caption class="color">My Daily Grind</caption>
     <thead>
         <tr>
             <th>&nbsp;</th>
